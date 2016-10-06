@@ -1,11 +1,10 @@
 body {
   font-size: 16px;
-  color: #fff;
-  background-color: #61122f;
+  color: black;
+  background-color: white;
   font-family: 'Oxygen', sans-serif;
 }
 /** HEADER **/
-
 #header-nav {
   background-color: gray;
   border-radius: 0;
@@ -78,9 +77,28 @@ body {
 }
 /* END FOOTER */
 
-
-
 /* HOME PAGE */
+#main-content-title {
+  text-align: center;
+  margin-top: auto;
+}
+
+#chicken{
+  background-color: gray;
+  width: 100%;
+}
+
+#chicken h3 {
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: -10px;
+}
+
+#chicken p {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .container .jumbotron {
   box-shadow: 0 0 50px #3F0C1F;
   border: 2px solid #3F0C1F;
