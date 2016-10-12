@@ -11,17 +11,9 @@ body {
   border: 0;
 }
 
-.navbar-brand {
-  height: auto;
-  padding-top: 25px;
-}
-.navbar-brand h1 { /* Restaurant name */
-  font-family: 'Lora', serif;
-  color: black;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
+.navbar-brand p {
+  color: #000;
+  font-size: 1.5em;
 }
 
 #nav-list {
@@ -79,29 +71,31 @@ body {
 
 /* HOME PAGE */
 #main-content-title {
-  text-align: center;
+  /*text-align: center;*/
   margin-top: auto;
 }
 
-#chicken{
+#chicken,#beef,#sushi{
   background-color: gray;
   width: 100%;
 }
 
-#chicken h3 {
+#chicken h3,#beef h3,#sushi h3 {
   text-align: center;
   padding-top: 10px;
   margin-bottom: -10px;
 }
 
-#chicken p {
+#chicken p,#beef p,#sushi p {
   padding-right: 20px;
   padding-left: 20px;
 }
 
 .container .jumbotron {
-  box-shadow: 0 0 50px #3F0C1F;
-  border: 2px solid #3F0C1F;
+  height: auto;
+  padding: 0;
+  background-color:transparent;
+  margin: auto;
 }
 
 #menu-tile, #specials-tile, #map-tile {
@@ -216,10 +210,6 @@ h3.menu-item-title {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  .container .jumbotron {
-    background: url('../images/jumbotron_1200.jpg') no-repeat;
-    height: 675px;
-  }
 }
 
 /********** Medium devices only **********/
@@ -233,35 +223,17 @@ h3.menu-item-title {
   }
   /* End Header */
 
-  /* Home Page */
-  .container .jumbotron {
-    background: url('../images/jumbotron_992.jpg') no-repeat;
-    height: 558px;
-  }
   /* End Home Page */
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Home Page */
-  .container .jumbotron {
-    background: url('../images/jumbotron_768.jpg') no-repeat;
-    height: 432px;
-  }
-  /* End Home Page */
+
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-  /* Header */
-  .navbar-brand {
-    padding-top: 10px;
-    height: 50px;
-  }
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
+
 
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
@@ -305,11 +277,7 @@ h3.menu-item-title {
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
-  /* Header */
-  .navbar-brand h1 { /* Restaurant name */
-    padding-top: 5px;
-    font-size: 6vw;
-  }
+
   /* End Header */
 
   /* Home page */
